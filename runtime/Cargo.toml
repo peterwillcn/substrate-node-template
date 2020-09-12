@@ -154,6 +154,12 @@ package = 'pallet-timestamp'
 tag = 'v2.0.0-rc5'
 version = '2.0.0-rc5'
 
+[dependencies.poe]
+default-features = false
+package = 'pallet-poe'
+path = '../pallets/poe'
+version = '2.0.0-rc5'
+
 [dependencies.transaction-payment]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
@@ -194,4 +200,5 @@ std = [
     'timestamp/std',
     'transaction-payment/std',
     'template/std',
+    'poe/std',
 ]
